@@ -1,4 +1,4 @@
-@import url("@flaticon/flaticon-uicons/css/all/all");
+@import "@flaticon/flaticon-uicons/css/all/all";
 
 @tailwind base;
 @tailwind components;
@@ -11,11 +11,17 @@
     --background-foreground: 0 0% 100%;
     --text: 0 0% 11%;
   }
+
+  .dark {
+    --background: 0 0% 11%;
+    --background-foreground: 0 0% 16%;
+    --text: 220 3% 91%;
+  }
 }
 
 @layer base {
   body {
-    @apply bg-gray-100 text-text;
+    @apply bg-background text-text;
   }
 
   i {
@@ -25,5 +31,8 @@
   ::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
   }
 }

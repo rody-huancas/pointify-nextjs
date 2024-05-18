@@ -8,11 +8,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <section className="h-[10dvh] py-4 px-5">
         <Header />
       </section>
-      <section className="h-[90dvh] lg:flex lg:gap-4">
-        <main className="basis-4/4 lg:basis-3/4 p-5 lg:pr-2 overflow-x-hidden overflow-y-auto">
+      <section className="h-[88dvh] lg:flex lg:gap-4 mt-[2dvh]">
+        <main className="basis-4/4 xl:basis-3/4 p-5 lg:pr-2 overflow-y-auto">
           <div>{children}</div>
         </main>
-        <div className="lg:basis-1/4 p-5 lg:pl-2">
+        <div className="xl:basis-1/4 p-5 lg:pl-2">
           <Cart />
         </div>
       </section>

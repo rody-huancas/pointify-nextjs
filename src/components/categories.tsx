@@ -9,14 +9,14 @@ const Categories = () => {
             type="button"
             className="py-3 px-6 bg-primary font-medium rounded-full"
           >
-            Todos
+            Todas
           </button>
         </li>
         {categories.map((category) => (
           <li key={category.category}>
             <button
               type="button"
-              className="py-3 px-6 font-medium rounded-full hover:bg-white/70 transition-colors duration-500 ease-out"
+              className="py-3 px-6 font-medium rounded-full hover:bg-white/30 transition-colors"
             >
               {category.category}
             </button>
